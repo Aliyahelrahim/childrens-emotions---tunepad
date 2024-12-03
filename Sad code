@@ -1,0 +1,48 @@
+# New TunePad cell
+for i in range(0,2):
+    playNote(53, beats=2)
+for i in range(0,2):
+    playNote(52, beats=2)
+for i in range(0,2):
+    playNote(50, beats=2)
+    
+rest(4)
+getBeat() # returns 0
+
+playNote(53, beats = 2)
+getBeat() # returns 2
+
+
+
+# New TunePad cell
+rest(12)
+for i in range (0,3):
+    playNote(6, beats= 1)
+
+
+
+# New TunePad cell
+playSound(1205)
+playSound(1205, beats = 0.5, velocity = 20)
+playSound(1205, beats = 0.5, velocity = 20, sustain = 4)
+playSound(1205, beats = 2, pitch = 3, velocity = 80)
+playSound([1205, 560, 44])
+
+
+
+
+# New TunePad cell
+for i in range(2):
+    playNote(40,3);
+    playNote(39,0.5);
+    playNote(38,0.5);
+    playNote(36,3);
+    playNote(36,0.5);
+    playNote(38,0.5);
+    playNote(43,8);
+    rewind(2);
+    
+    playNote(42,0.5);
+    playNote(43,0.5);
+    playNote(46,0.5);
+    playNote(48,0.5);
