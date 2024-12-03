@@ -1,0 +1,70 @@
+# New TunePad cell
+for i in range(0,4):
+    playNote(65, beats=0.25)
+   
+for i in range(0,4):
+    playNote(62, beats=0.5)
+    playNote(68, beats =0.5)    
+
+    rest(4)
+
+    getBeat() # returns 0
+
+playNote(65, beats = 2)
+getBeat() # returns 2
+
+playNote(65, beats = 1)
+getBeat() # returns 3
+
+playNote(65, beats = 1)
+getMeasure() # returns 0
+
+
+
+
+# New TunePad cell
+rest(5)
+playNote(7, beats=1)
+for i in range(0,2):
+    playNote(1, beats = 0.5)
+    playNote(2, beats = 0.5)
+
+rest(2)
+# cut the volume by half
+with gain(0.5):
+    playNote(6)
+
+
+
+
+
+# New TunePad cell
+rest(2)
+# shifts each note up 7 steps
+with transpose(7):
+    playNote(36)
+    playNote(36)
+    playNote(39)
+    playNote(41)
+
+# shifts each note down 12 steps (an octave)
+with transpose(-12):
+    playNote(36)
+    playNote(36)
+    playNote(39)
+    playNote(41)
+
+
+
+
+# New TunePad cell
+rest(12)
+for i in range (0,5):
+    playNote(9, beats=0.5)
+    
+    for i in range (0,5):
+        playNote(8, beats=0.5)
+
+
+
+
