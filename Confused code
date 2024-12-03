@@ -1,0 +1,45 @@
+# New TunePad cell
+playNote(71, beats = 1)
+playNote(71, beats = 3)
+playNote(74, beats = 1)
+playNote(74, beats = 3)
+playNote(76, beats = 1)
+playNote(76, beats = 3)
+
+
+# New TunePad cell
+rest(4)
+for i in range(0, 4):  #0,1,2,3 
+ playNote(6, beats=0.5) #high hat
+
+for i in range(0, 4): 
+ playNote(7, beats=0.5) #mid tom
+
+for i in range(0,4):
+ playNote(8, beats=0.5) #low tom
+
+for i in range(0,4):
+ playNote(0, beats=0.5) #kick 
+playNote(9, beats = 1, sustain = 4) # crash symbol
+
+
+# New TunePad cell
+
+# apply a constant pitch bend
+rest(4)
+with bend(cents = 100):
+    playNote(66)
+    playNote(66)
+    rest(1)
+# shifts each note up 7 steps
+with transpose(7):
+    playNote(65)
+    playNote(70)
+    playNote(65)
+    playNote(70)
+for i in range(0,2):
+    playNote(55, beats = 2)
+
+
+
+
